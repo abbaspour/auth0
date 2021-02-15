@@ -521,6 +521,14 @@ func (c *ConnectionOptions) GetBruteForceProtection() bool {
 	return *c.BruteForceProtection
 }
 
+// GetDisableSelfServiceChangePassword returns the DisableSelfServiceChangePassword field if it's non-nil, zero value otherwise.
+func (c *ConnectionOptions) GetDisableSelfServiceChangePassword() bool {
+	if c == nil || c.DisableSelfServiceChangePassword == nil {
+		return false
+	}
+	return *c.DisableSelfServiceChangePassword
+}
+
 // GetDisableSignup returns the DisableSignup field if it's non-nil, zero value otherwise.
 func (c *ConnectionOptions) GetDisableSignup() bool {
 	if c == nil || c.DisableSignup == nil {
