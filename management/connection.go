@@ -196,6 +196,8 @@ type ConnectionOptions struct {
 
 	DisableSignup *bool `json:"disable_signup,omitempty"`
 
+	DisableSelfServiceChangePassword *bool `json:"disable_self_service_change_password,omitempty"`
+
 	RequiresUsername *bool `json:"requires_username,omitempty"`
 
 	// Scripts for the connection
